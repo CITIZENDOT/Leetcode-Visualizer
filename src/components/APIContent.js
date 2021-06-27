@@ -141,7 +141,7 @@ function APIContent({ submitted, setSubmitted }) {
                   <LabelImportantIcon />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Instead, you could download the page content and upload the file here."
+                  primary="Instead, you could download the page content and upload the file here. Make sure the file has valid JSON content."
                   secondary={
                     "I know this process is cumbersome. Leetcode doesn't have official API. Also, It makes developer's life extremely hard by including reCaptcha, CSRF token, disabling CORS etc..."
                   }
