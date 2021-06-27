@@ -65,9 +65,9 @@ export default function Layout(props) {
             </Button>
             <IconButton onClick={toggleTheme}>
               {theme.palette.type === "light" ? (
-                <Brightness5Icon style={{color: "white"}} />
+                <Brightness5Icon style={{ color: "white" }} />
               ) : (
-                <Brightness4Icon style={{color: "black"}} />
+                <Brightness4Icon style={{ color: "black" }} />
               )}
             </IconButton>
           </Toolbar>

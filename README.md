@@ -16,7 +16,7 @@
 
 ## Usage
 
-- Head over to [this]() page.
+- Head over to [this](https://leetcode-analyzer.vercel.app/update) page.
 - Follow Instructions there.
 
 ### Technical Details

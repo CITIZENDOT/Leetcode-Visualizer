@@ -48,6 +48,16 @@ function parseTotalData(apiData, tags) {
 
   apiData.stat_status_pairs.forEach((element) => {
     const id = element.stat.question_id.toString();
+    if (element.status === "notac" && id in tagsData) {
+      const topicTags = tagsData[id].tags;
+      notac_questions.push({
+        id: id,
+        title: element.stat.question__title,
+        difficulty: element.difficulty.level,
+        tags: topicTags.join(", "),
+        url: `https://leetcode.com/problems/${element.stat.question__title_slug}`,
+      });
+    }
     if (id in tagsData) {
       const topicTags = tagsData[id].tags;
       topicTags.forEach((tag) => {
@@ -56,13 +66,6 @@ function parseTotalData(apiData, tags) {
           else if (element.difficulty.level === 2) _data[tag].ac_medium++;
           else if (element.difficulty.level === 3) _data[tag].ac_hard++;
         } else if (element.status === "notac") {
-          notac_questions.push({
-            id: id,
-            title: element.stat.question__title,
-            difficulty: element.difficulty.level,
-            tags: topicTags.join(", "),
-            url: `https://leetcode.com/problems/${element.stat.question__title_slug}`,
-          });
           if (element.difficulty.level === 1) _data[tag].notac_easy++;
           else if (element.difficulty.level === 2) _data[tag].notac_medium++;
           else if (element.difficulty.level === 3) _data[tag].notac_hard++;
