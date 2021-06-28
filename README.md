@@ -1,4 +1,4 @@
-## Leetcode Visualizer
+## Leetcode Visualizer [Video Demo](https://youtu.be/m-ryVXzOFys)
 
 ### Features
 
