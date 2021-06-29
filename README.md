@@ -1,5 +1,7 @@
 ## Leetcode Visualizer [Video Demo](https://youtu.be/m-ryVXzOFys)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/citizendot/leetcode-visualizer/badge)](https://www.codefactor.io/repository/github/citizendot/leetcode-visualizer)
+
 ### Features
 
 - Light/Dark Mode
